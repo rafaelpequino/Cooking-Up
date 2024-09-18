@@ -12,6 +12,7 @@ export default {
 </script>
 
 <template>
+    <!-- :class="["tag", { ativa }]" -->
     <span class="tag" :class="{ ativa: ativa }">
         {{ texto }}
     </span>
@@ -29,6 +30,7 @@ export default {
     color: var(--cinza);
     background: var(--cinza-claro);
     font-weight: 400;
+    cursor: pointer;
 }
 
 .tag.ativa {
